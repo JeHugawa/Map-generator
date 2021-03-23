@@ -2,7 +2,9 @@
 
 git repositio **Ohjelmistotekniikka** kurssia varten.
 
-## viikko 1
+##tehtävät
+
+###viikko 1
 
 [gitlog.txt](https://github.com/JeHugawa/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
  
