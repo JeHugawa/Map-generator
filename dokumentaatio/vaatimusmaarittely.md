@@ -21,7 +21,7 @@ Sovelluksen tarkoituksena on generoida karttoja satunnais avainten avulla (rando
 
 Sovelluksessa on kolme päänäkymää:
 
-<img src="https://raw.githubusercontent.com/jehugawa/ot-harjoitustyo/master/dokumentaatio/kuvat/kayttoliittyma.jpg" width="750">
+<img src="https://raw.githubusercontent.com/JeHugawa/ot-harjoitustyo/master/dokumentaatio/Kuvat/kayttoliittyma.jpg" width="750">
 
 Sovelluksen alkunäkymässä käyttäjä voi joko antaa seedin tai avata asetusnäkymän. asetusnäkymässä käyttäjä voi muokata erilaisia kartan ominaisuuksia. Siitä voi palata takaisin aloitusnäkymään. Aloitusnäkymästä voi jatkaa generointinäkymään, mistä käyttäjä voi tutkia luotua karttaa ja siitä tallentaa sen ja palata takaisin alkuun.
 
