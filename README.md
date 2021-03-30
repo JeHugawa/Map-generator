@@ -1,6 +1,6 @@
 # Ohjelmistotekniikka
 
-git repositio **Ohjelmistotekniikka** kurssia varten.
+git repositio [Ohjelmistotekniikka](https://ohjelmistotekniikka-hy.github.io/) kurssia varten.
 
 ##tehtävät
 
