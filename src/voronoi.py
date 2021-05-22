@@ -3,7 +3,7 @@ import math
 
 
 class Voronoi:
-    def generate_map(seed,voronoid_points):
+    def generate_map(seed,voronoi_amount):
         #seed should stay the same as long as the program is running
         random.seed(seed)
         tilemap = []
@@ -13,14 +13,14 @@ class Voronoi:
                 a.append(0)
             tilemap.append(a)
 
-        tilemap = voronoid(tilemap,voronoid_points)
+        tilemap = Voronoi.voronoid(tilemap,voronoi_amount)
 
         return tilemap
 
 
     #extremely simple bruteforce Voronoid algorithm
     def voronoid(tilemap,amount):
-        points = generate_voronoi_points(amount)
+        points = Voronoi.generate_voronoi_points(amount)
 
         for i in range(0,len(tilemap)):
             for j in range(0, len(tilemap)):

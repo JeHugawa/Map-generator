@@ -1,11 +1,11 @@
-from generator.voronoi import Voronoi
+from voronoi import Voronoi
 
 
 #Main class for map generation
-class MapGenerator:
-    def create_map(seed):
-        tilemap = Voronoi.generate_map(seed, voronoid_points)
-        tilemap = parse_map(tilemap)
+class Mapgenerator:
+    def create_map(seed,voronoi_amount):
+        tilemap = Voronoi.generate_map(seed,voronoi_amount)
+        tilemap = Mapgenerator.parse_map(tilemap)
         return tilemap
 
     #parses Voronoied map to human readable form
@@ -18,12 +18,16 @@ class MapGenerator:
                     if tilemap[i][j] not in borders:
                         borders.append(tilemap[i][j])
         #next we convert all border regions to water and rest to land
+        ib = 0
+        jb = 0
         for x in tilemap:
             for y in x:
                 if y in borders:
-                    y = 1
+                    tilemap[ib][jb] = 1
                 else:
-                    y = 2
-
+                    tilemap[ib][jb] = 2
+                jb += 1
+            ib += 1
+            jb = 0
         return tilemap
 
